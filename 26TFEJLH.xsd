@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:meta="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+        xmlns:tns="https://soap.api.nav.gov.hu/definitions/model/2.0/26TFEJLH/3.0"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        targetNamespace="https://soap.api.nav.gov.hu/definitions/model/2.0/26TFEJLH/3.0">
+   <import namespace="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+           schemaLocation="form_xsd_metaschema.xsd"/>
+   <element name="Doc_26TFEJLH"
+            type="tns:Doc_26TFEJLH_Type"
+            meta:metaType="DocMetaType">
+      <annotation>
+         <documentation>Bevallás a turizmusfejlesztési hozzájárulásról</documentation>
+      </annotation>
+   </element>
+   <complexType name="Doc_26TFEJLH_Type">
+      <annotation>
+         <documentation>A teljes bizonylat szerkezetet leíró típus</documentation>
+      </annotation>
+      <sequence>
+         <element name="Form_26TFEJLH"
+                  type="tns:Form_26TFEJLH_Type"
+                  minOccurs="1"
+                  maxOccurs="1"
+                  meta:metaType="FormMetaType">
+            <annotation>
+               <documentation>26TFEJLH részbizonylat</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <simpleType name="Enum_26TFEJLH_0A0001D006A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1">
+            <annotation>
+               <documentation>1=megelőző időszakra vonatkozó bevallás</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="2">
+            <annotation>
+               <documentation>2=eljárás alatti időszakra vonatkozó bevallás</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="3">
+            <annotation>
+               <documentation>3=az eljárást lezáró bevallás</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_26TFEJLH_0A0001D005A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="F">
+            <annotation>
+               <documentation>F=Felszámolás</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="V">
+            <annotation>
+               <documentation>V=Végelszámolás</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="E">
+            <annotation>
+               <documentation>E=Egyéni vállalkozói megszűnés</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="A">
+            <annotation>
+               <documentation>A=Átalakulás, egyesülés, szétválás</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="M">
+            <annotation>
+               <documentation>M=Egyéb jogutód nélküli megszűnés</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="B">
+            <annotation>
+               <documentation>B=EU más tagállamában illetőséggel bíró gazdasági társaságba történő beolvadás</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="D">
+            <annotation>
+               <documentation>D=Kényszertörlési eljárás</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_26TFEJLH_0A0001D004A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="H">
+            <annotation>
+               <documentation>H=adózói javítás (helyesbítés)</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="O">
+            <annotation>
+               <documentation>O=önellenőrzés</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_26TFEJLH_0A0001D007A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="H">
+            <annotation>
+               <documentation>H=havi</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="N">
+            <annotation>
+               <documentation>N=negyedéves</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="E">
+            <annotation>
+               <documentation>E=éves</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <complexType name="Form_26TFEJLH_Type">
+      <annotation>
+         <documentation>A teljes nyomtatvány 26TFEJLH részbiztonylatának szerkezetét leíró típus.</documentation>
+      </annotation>
+      <sequence>
+         <element name="Block_120001"
+                  type="tns:Block_26TFEJLH_120001_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Azonosító adatok</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120006"
+                  type="tns:Block_26TFEJLH_120006_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Bevallás jellemzői</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120010"
+                  type="tns:Block_26TFEJLH_120010_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Turizmusfejlesztési hozzájárulás meghatározása</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120012"
+                  type="tns:Block_26TFEJLH_120012_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Önellenőrzés</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120025"
+                  type="tns:Block_26TFEJLH_120025_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Ügyintéző</documentation>
+            </annotation>
+         </element>
+         <element name="Block_Other"
+                  type="tns:Block_26TFEJLH_Other_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Menüben nem szereplő mezőcsoportokat tartalmazó Block.</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Block_26TFEJLH_120001_Type">
+      <annotation>
+         <documentation>Azonosító adatok</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120002"
+                  type="tns:FieldGroup_26TFEJLH_120002_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Adózó adatai</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_26TFEJLH_120006_Type">
+      <annotation>
+         <documentation>Bevallás jellemzői</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120007"
+                  type="tns:FieldGroup_26TFEJLH_120007_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Bevallási időszak</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120009"
+                  type="tns:FieldGroup_26TFEJLH_120009_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Jellemzők</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_26TFEJLH_120010_Type">
+      <annotation>
+         <documentation>Turizmusfejlesztési hozzájárulás meghatározása</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120011"
+                  type="tns:FieldGroup_26TFEJLH_120011_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Turizmusfejlesztési hozzájárulás</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_26TFEJLH_120012_Type">
+      <annotation>
+         <documentation>Önellenőrzés</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120024"
+                  type="tns:FieldGroup_26TFEJLH_120024_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Előzmény</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120013"
+                  type="tns:FieldGroup_26TFEJLH_120013_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Önellenőrzési melléklet</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_26TFEJLH_120025_Type">
+      <annotation>
+         <documentation>Ügyintéző</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120026"
+                  type="tns:FieldGroup_26TFEJLH_120026_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Ügyintéző adatai</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_26TFEJLH_Other_Type">
+      <annotation>
+         <documentation>Menüben nem szereplő mezőcsoportokat tartalmazó Block típus.</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120055"
+                  type="tns:FieldGroup_26TFEJLH_120055_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>egyenleg</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26TFEJLH_120002_Type">
+      <annotation>
+         <documentation>Adózó adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001C001A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adózó adószáma (adószám)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C002A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adózó adóazonosító jele (adóazonosító)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C004A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Jogelőd adószáma (jogelőd_adószám)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C005A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adózó neve (adózó_név)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26TFEJLH_120007_Type">
+      <annotation>
+         <documentation>Bevallási időszak</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001D001A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bevallási időszak kezdete (bevtol)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D002A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bevallási időszak vége (bevig)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26TFEJLH_120009_Type">
+      <annotation>
+         <documentation>Jellemzők</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001D004A"
+                  minOccurs="0"
+                  type="tns:Enum_26TFEJLH_0A0001D004A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bevallás jellege (bev_jelleg)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D003A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A bevallás az előtársasági időszakot is magában foglalja (előtársas)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D005A"
+                  minOccurs="0"
+                  type="tns:Enum_26TFEJLH_0A0001D005A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bevallás típusa (bev_típus)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D008A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Küszöbérték túllépés éves adózó esetén (küszöb)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D006A"
+                  minOccurs="0"
+                  type="tns:Enum_26TFEJLH_0A0001D006A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bevallás fajtája (bev_fajta)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D009A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adóhatósági engedéllyel évközi gyakoriság váltás (gyakori)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D007A"
+                  minOccurs="0"
+                  type="tns:Enum_26TFEJLH_0A0001D007A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bevallás gyakorisága (bev_gyakoriság)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D010A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Közösségi adószám évközi megállapítása miatt törtidőszaki bevallás éves adózó esetén (közösségi)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26TFEJLH_120011_Type">
+      <annotation>
+         <documentation>Turizmusfejlesztési hozzájárulás</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001E0001AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>1. Étkezőhelyi vendéglátásban az étel- és a helyben készített, nem alkoholtartalmú italforgalom ¦ Hozzájárulás alapja ([26TFEJLH]A1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001F50001A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>5. Étterem, cukrászda vendéglátással kapcsolatos szolgáltatásai ¦ Hozzájárulás alapja ([26TFEJLH]A5)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0002AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2. Kereskedelmi szálláshely-szolgáltatás ¦ Hozzájárulás alapja ([26TFEJLH]A2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0003AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>3. „Hop on hop off” jellegű menetrend szerinti buszos városnéző turisztikai szolgáltatás ¦ Hozzájárulás alapja ([26TFEJLH]A3)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0004AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 4. Turizmusfejlesztési hozzájárulás összesen (Adónem kód 310) ¦ Hozzájárulás alapja ([26TFEJLH]A4)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0004BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 4. Turizmusfejlesztési hozzájárulás összesen (Adónem kód 310) ¦ Hozzájárulás ([26TFEJLH]B4)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26TFEJLH_120024_Type">
+      <annotation>
+         <documentation>Előzmény</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001C003A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Hibásnak minősített bevallás vonalkódja (vonalkód)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001F001A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Ismételt önellenőrzés jelölése (x) (ism_önell)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26TFEJLH_120013_Type">
+      <annotation>
+         <documentation>Önellenőrzési melléklet</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001F0011AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>11. Turizmusfejlesztési hozzájárulás (Adónem kód 310) ¦ Adókötelezettség változása (+/-) ([26TFEJLH]A11)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001F0012BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>12. Önellenőrzési pótlék összege (Adónem kód 215) ¦ Önellenőrzési pótlék összege (+/-) ([26TFEJLH]B12)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26TFEJLH_120026_Type">
+      <annotation>
+         <documentation>Ügyintéző adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001C006A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Ügyintéző neve (ügyintéző_név)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C007A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Ügyintéző telefonszáma (ügyintéző_tel)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26TFEJLH_120055_Type">
+      <annotation>
+         <documentation>egyenleg</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001A003A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 310 befizet (310_befizetendő)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001A005A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 215 befizet (215_befizetendő)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001A004A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 310 vissza (310_visszaigényelhető)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001A006A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 215 vissza (215_visszaigényelhető)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+</schema>
